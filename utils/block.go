@@ -131,4 +131,8 @@ func formatBlockFields(b *types.Block) {
 		by, _ := json.Marshal(b.BlockSize)
 		b.BlockSize = string(by)
 	}
+
+	if _, ok := b.Diff.(string); ok {
+		b.Diff = SwitchDiff(b.Diff.(string))
+	}
 }
