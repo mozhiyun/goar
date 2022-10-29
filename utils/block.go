@@ -3,14 +3,18 @@ package utils
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/everFinance/goar/types"
 	"strings"
+
+	"github.com/everFinance/goar/types"
 )
 
 const (
-	height_2_0 = int64(422250)
-	height_2_4 = int64(633720)
-	height_2_5 = int64(812970)
+	// height_2_0 = int64(422250)
+	// height_2_4 = int64(633720)
+	// height_2_5 = int64(812970)
+	height_2_0 = int64(0)
+	height_2_4 = int64(0)
+	height_2_5 = int64(0)
 )
 
 func GenerateIndepHash(b types.Block) string {
